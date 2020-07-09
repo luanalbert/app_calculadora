@@ -7,6 +7,11 @@ function calcular(tipo, valor) {
            document.getElementById('resultado').style.color = ('#000000 ') 
            
         }
+        if (valor === 'clear'){// sendo corrigida backspace - function
+                let input = document.getElementById('resultado');
+                let inputText = input.value;
+                input.value = inputText.substring(0,inputText.length-1);
+        }
         if(valor === '+' || valor === '-' || valor === '*' || valor === '/' ||valor === '.') {
             document.getElementById('resultado').value += valor
         }
@@ -24,6 +29,6 @@ function calcular(tipo, valor) {
         }
     }else if (tipo === 'valor') {
     
-        document.getElementById('resultado').value += valor 
+       document.getElementById('resultado').value += valor 
     }
-}
+} //parte do teclado 

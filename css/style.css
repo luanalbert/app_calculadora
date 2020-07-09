@@ -16,7 +16,13 @@ box-shadow: 1px 1px 1px #000;
 }
 
 .clear {
-width: 130px;
+width: 70px;
+}
+.clear1 {
+width: 52px; 
+}
+.backspace {
+    color: white;
 }
 
 .enter {
