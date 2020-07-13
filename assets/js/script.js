@@ -17,8 +17,22 @@ window.onload = function(e) {
           input.value = inputText.substring(0,inputText.length-1);
         }
         //Reconhecendo as operações e a virgula
-        if(valor === '+' || valor === '-' || valor === '*' || valor === '/' ||valor === '.') {
-          document.getElementById('resultado').value += valor
+        switch(valor){
+          case valor === '+':
+            document.getElementById('resultado').value += valor
+          break;
+          case valor === '-':
+            document.getElementById('resultado').value += valor
+          break;
+          case valor === '*':
+            document.getElementById('resultado').value += valor
+          break;
+          case valor === '/':
+            document.getElementById('resultado').value += valor
+          break;
+          case valor === '.':
+            document.getElementById('resultado').value += valor
+          break;
         }
         //Realiza as operações que são imputadas e disponibilizadas no visor da calculadora,
         // por meio do eval, que tranfomar valores string em valores possiveis de realizar operações 
@@ -50,6 +64,7 @@ window.onload = function(e) {
       if(operacao === String.fromCharCode(43) || operacao === String.fromCharCode(47)|| operacao === String.fromCharCode(42) || operacao === String.fromCharCode(45) || operacao === String.fromCharCode(46))    
       document.getElementById('resultado').value += operacao;
       //recomhece o click da tecla enter e mostra o resultado
+      
      if (operacao === String.fromCharCode(13)){
         var teclaEnter = eval(document.getElementById('resultado').value)
         var mostrarTela = document.getElementById('resultado').value = teclaEnter;
@@ -59,10 +74,10 @@ window.onload = function(e) {
         //preciso estudar mais um pouco essa part, pois a peguei feita 
         var btn = document.getElementsByClassName("btn");
         for (var i = 0; i < btn.length; i++){
-            btn[i].addEventListener('click', function(){
-                 this.blur();
-            });
-        }
+          btn[i].addEventListener('click', function(){
+                this.blur();
+          });
+        }   
       //caso ovalor seja undefined  
       if (teclaEnter == undefined){
         document.getElementById('resultado').value = "Operação não suportada"
