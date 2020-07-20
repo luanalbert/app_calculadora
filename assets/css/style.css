@@ -44,12 +44,16 @@ margin-bottom: 20px;
 border: solid 1px #000;
 box-shadow: 1px 1px 1px #000;
 }
+#row-zero{
+    margin-top: -60px;
+}
 
 footer p {
     font-size: 15px;
     padding: 15px;
     font-weight: bold;
 }
+/*
 @media (min-width: 300px) and (max-width: 575.98px) {
     #row-bg{
         width: 100vw;
@@ -141,3 +145,4 @@ footer p {
  }
 
 @media (min-width: 1200px) { ... }
+*/
