@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .calculadora {
 margin-top: 40px;
 border: solid 1px #000;
@@ -47,3 +50,94 @@ footer p {
     padding: 15px;
     font-weight: bold;
 }
+@media (min-width: 300px) and (max-width: 575.98px) {
+    #row-bg{
+        width: 100vw;
+        height: 100vh;
+    }
+    .calculadora {
+     width: 100vw;
+     height: 100vh;
+     margin-top: 0px;
+    }
+    .btn{
+        width: 21.46%;
+        height: 95px;
+    }
+    .enter {
+        height: 185px;
+    }
+    .zero {
+        width: 45.87%;
+    }
+    .form-control {
+        height: 50px;
+        
+    }
+    #row-zero {
+        margin-top: -95px;
+    }
+} 
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #row-bg{
+        width: 100vw;
+        height: 100vh;
+    }
+    .calculadora {
+     width: 100vw;
+     height: 100vh;
+     margin-top: 0px;
+    }
+    .btn{
+        width: 22.46%;
+        height: 90px;
+    }
+    .enter {
+        height: 200px;
+    }
+    .zero {
+        width: 47.87%;
+    }
+    .form-control {
+        height: 50px;
+        
+    }
+    #row-zero {
+        margin-top: -105px
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #row-bg{
+        width: 100vw;
+        height: 100vh;
+    }
+    .calculadora {
+     width: 100vw;
+     height: 100vh;
+     margin-top: 0px;
+    }
+    .btn{
+        width: 23.46%;
+        height: 90px;
+    }
+    .enter {
+        height: 200px;
+    }
+    .zero {
+        width: 47.87%;
+    }
+    .form-control {
+        height: 50px;
+        
+    }
+    #row-zero {
+        margin-top: -105px
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+ }
+
+@media (min-width: 1200px) { ... }
